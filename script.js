@@ -1,15 +1,15 @@
-var imgBox = $('#image-box');
-var stBtn = $("#start-bttn");
-var nxtQstn = $("#next-bttn");
-var cagePic = $("#cage-pic")
-var questionText = $("#question-text");
-var timerSpot = $("#timer-spot")
-var timerTxt = $("#timer-txt")
-var h1 = document.getElementById("#h1")
+var imgBox = document.getElementById("image-box");
+var stBtn = document.getElementById("start-bttn");
+var nxtQstn = document.getElementById("next-bttn")
+var cagePic = document.getElementById("cage-pic")
+var questionText = document.getElementById("question-text")
+var timerSpot = document.getElementById("timer-spot")
+var timerTxt = document.getElementById("timer-txt")
+var h1 = document.getElementById("h1")
 var picsIndex = 0;
 var questionsIndex = 0;
 
-
+console.log(imgBox);
 
 
 var questions = [
@@ -84,28 +84,46 @@ var pictureList = [
 ]
 
 
-
-function startQuiz() {
-
-stBtn.on("click", function(){
-var timer = 5;
-timerTxt.text(timer)
-var gmTimer = setInterval(() => {
-    timer--;
-
-    timerTxt.text(timer);
-
-    if(timer === 0){
-        clearInterval(gmTimer);
-        timerSpot.css('display', 'none');
-        stBtn.css('display', 'inline');
-        console.log(timerSpot)
+// stBtn.on("click", function()
 
 
-    }
 
-}, 1000)
-}
-   )
 
-} return startQuiz()
+// // function startQuiz() {
+
+// stBtn.on("click", function(){
+// var timer = 5;
+// timerTxt.text(timer)
+// var quizTimer = setInterval(() => {
+//     timer--;
+
+//     timerTxt.text(timer);
+
+//     if(timer === 0){
+//         clearInterval(quizTimer);
+//         timerSpot.css('display', 'none');
+//         stBtn.css('display', 'inline');
+//         console.log(timerSpot)
+
+
+//     }
+
+// }, 1000)
+// }
+//    )
+
+//    stBtn.on("click")
+
+
+
+
+
+
+
+
+
+
+
+
+
+// } 
