@@ -19,6 +19,10 @@
 
 ----------------------------------------------------------------
 
+What I am building will be a short quiz built in JavaScript.
+In this quiz you will be presented with several questions and have a time limit
+
+
 
 -onClick --> start button
     -timer starts 
