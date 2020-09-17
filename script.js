@@ -6,10 +6,10 @@ var questionText = document.getElementById("question-text")
 var timerSpot = document.getElementById("timer-spot")
 var timerTxt = document.getElementById("timer-txt")
 var h1 = document.getElementById("h1")
-var picsIndex = 0;
+// var picsIndex = 0;
 var questionsIndex = 0;
 
-console.log(imgBox);
+
 
 
 var questions = [
@@ -55,33 +55,33 @@ var questions = [
 
 
 
-var pictureList = [
+// var pictureList = [
 
-    {
-        url: "https://i.pinimg.com/originals/d1/bc/62/d1bc627ac993f8bc07a92bf117ae660b.jpg",
-        desc: "long hair, wearing a trenchcoat"
-    },
+//     {
+//         url: "https://i.pinimg.com/originals/d1/bc/62/d1bc627ac993f8bc07a92bf117ae660b.jpg",
+//         desc: "long hair, wearing a trenchcoat"
+//     },
 
-    {
-        url: "https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/The-Rock-700x300.jpg",
-        desc: "kneeling and holding flairs"
-    },
+//     {
+//         url: "https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/The-Rock-700x300.jpg",
+//         desc: "kneeling and holding flairs"
+//     },
 
-    {
-        url: "https://3.bp.blogspot.com/_V2GF7zO6_M8/TL-8AEo6R0I/AAAAAAAACws/yTlr9LZO344/s1600/nicolas_cage_moonstruck.jpg",
-        desc: "man with disheveled hair in white tank top"
-    },
+//     {
+//         url: "https://3.bp.blogspot.com/_V2GF7zO6_M8/TL-8AEo6R0I/AAAAAAAACws/yTlr9LZO344/s1600/nicolas_cage_moonstruck.jpg",
+//         desc: "man with disheveled hair in white tank top"
+//     },
 
-    {
-        url: "https://medias.spotern.com/spots/w640/76/76875-1532336916.jpg",
-        desc: "man wearing sunglasses with reeding hairline"
-    },
-    {
-        url: "https://offscreen.com/images/articles/_resized/CAGE-bigger.jpg",
-        desc: "man yelling with his fingers pointing up in the air"
-    },
+//     {
+//         url: "https://medias.spotern.com/spots/w640/76/76875-1532336916.jpg",
+//         desc: "man wearing sunglasses with reeding hairline"
+//     },
+//     {
+//         url: "https://offscreen.com/images/articles/_resized/CAGE-bigger.jpg",
+//         desc: "man yelling with his fingers pointing up in the air"
+//     },
 
-]
+// ]
 
 
 // stBtn.on("click", function()
