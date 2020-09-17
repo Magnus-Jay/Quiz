@@ -1,25 +1,21 @@
 var imgBox = document.getElementById("image-box");
 var stBtn = document.getElementById("start-bttn");
 var nxtQstn = document.getElementById("next-bttn")
-var cagePic = document.getElementById("cage-pic")
+var cageImg = document.getElementById("cage-pic")
 var questionText = document.getElementById("question-text")
 var timerSpot = document.getElementById("timer-spot")
 var timerTxt = document.getElementById("timer-txt")
 var h1 = document.getElementById("h1")
+
+// var container = getElementById("container")
 // var picsIndex = 0;
-var questionsIndex = 0;
+
 
 
 
 
 var questions = [
-    {
-        question: 'Which Nic Cage film is this?',
-        answer1: 'A Bronx Tale',
-        answer2: 'Lion King',
-        answer3: 'The Sorcerers Apprentice',
-        correctAnswer: 'The Sorcerers Apprentice',
-    } ,
+
 
     {
         question: 'Which Nic Cage film is this?',
@@ -53,6 +49,17 @@ var questions = [
     
 ]
 
+;
+
+// function sendQuestion () {
+
+questionText.textContent = questions[0].question
+
+
+// }
+
+
+
 
 
 // var pictureList = [
@@ -83,47 +90,4 @@ var questions = [
 
 // ]
 
-
-// stBtn.on("click", function()
-
-
-
-
-// // function startQuiz() {
-
-// stBtn.on("click", function(){
-// var timer = 5;
-// timerTxt.text(timer)
-// var quizTimer = setInterval(() => {
-//     timer--;
-
-//     timerTxt.text(timer);
-
-//     if(timer === 0){
-//         clearInterval(quizTimer);
-//         timerSpot.css('display', 'none');
-//         stBtn.css('display', 'inline');
-//         console.log(timerSpot)
-
-
-//     }
-
-// }, 1000)
-// }
-//    )
-
-//    stBtn.on("click")
-
-
-
-
-
-
-
-
-
-
-
-
-
-// } 
+    
