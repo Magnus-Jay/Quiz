@@ -69,7 +69,7 @@ but3.textContent = questions[0].answer3
 )   
 
 function nextQuestion() {
-    uestionText.textContent = questions[0].question
+    questionText.textContent = questions[1].question
     but1.textContent = questions[0].answer1
     but2.textContent = questions[0].answer2
     but3.textContent = questions[0].answer3
@@ -77,4 +77,4 @@ function nextQuestion() {
 }
 but1.addEventListener('click', function() {
 
-}
+});
