@@ -1,3 +1,75 @@
-#container {
-    background-color: salmon;
+.startGame {
+    background: rgb(57, 56, 70);
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-bottom: 1vw;
+    border-radius: 10px;
+    text-align: center;
+    padding: .5vw;
+    color: white;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+}
+
+.timeRemaining {
+    background: salmon;
+    display: none;
+    /* margin-left: 25vw;
+    margin-right: 25vw;
+    margin-bottom: 1vw; */
+    text-align: center;
+}
+
+.questions {
+    color: black;
+    background: cornflowerblue;
+    display: none;
+    text-align: center;
+    /* padding: 1vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-bottom: 1vw; */
+}
+
+.answers {
+    background: rgb(57, 56, 70);
+    display: none;
+    padding: 3vw;
+    color: purple;
+    width: auto;
+    text-align: center;
+     /* margin-left: 25vw;
+    margin-right: 25vw; */
+}
+
+.answer-buttons {
+    padding: .5vw;
+}
+
+.endGame {
+    background: orangered;
+    display: none;
+    padding: 3vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    text-align: center;
+    color: black;
+
+}
+
+.submitArea {
+    display: none;
+}
+
+.p2 {
+    font-size: 18px;
+}
+
+.high-score-list {
+    display: none;
+    text-align: center;
+    margin: 1vw;
 }
