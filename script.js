@@ -1,6 +1,6 @@
 
-var questionsRemaining = 5;
-var correctAnswer= "";
+var questionsRemaining = 4;
+var rightAnswer= "";
 var quizScore = 0;
 var secondsLeft = 30;
 var questionNum = 0;
@@ -32,29 +32,29 @@ const quizQuestions = [
         answer1: 'The Rock',
         answer2: 'When Harry Met Sally',
         answer3: 'Mulan',
-        correctAnswer: 'The Rock',
+        rightAnswer: 'The Rock',
     } ,
     {
         question: 'In which film did Nic Cage star with Cher?',
         answer1: 'Batman',
         answer2: 'Moonstruck',
         answer3: 'Cars',
-        correctAnswer: 'Moonstruck',
+        rightAnswer: 'Moonstruck',
     } ,
     {
         question: 'What film did Nic Cage play a treasure hunter?',
         answer1: 'Wall-E',
         answer2: 'Baywatch',
         answer3: 'National Treasure',
-        correctAnswer: 'National Treasure',
+        rightAnswer: 'National Treasure',
     } ,
     {
         question: 'Which Nic Cage film had 50-cent play a role?',
         answer1: 'Bad Lieutenant',
         answer2: 'Bugs Life',
         answer3: 'Gladiator',
-        correctAnswer: 'Bad Lieutenant',
-    } ,
+        rightAnswer: 'Bad Lieutenant'
+    } 
     
     
 ]
@@ -98,20 +98,23 @@ function questionBank() {
     answerBtnTwo.textContent = quizQuestions[questionNum].answer2;
     answerBtnThree.textContent = quizQuestions[questionNum].answer3;
 }
+
+
+
 answersContainer.addEventListener("click", function(event) {
 
     if(event.target.matches("button")){
       var userAnswer = (event.target.innerHTML)
-      var correctAnswer = quizQuestions[questionNum].correctAnswer;
+      var rightAnswer = quizQuestions[questionNum].rightAnswer;
       questionNum++;
    
-      if(userAnswer === correctAnswer) {
-        quizScore = quizScore + 20;
+      if(userAnswer === rightAnswer) {
+        quizScore = quizScore + 10;
   
       } else {
         secondsLeft = secondsLeft - 10;
       }
-      if(questionNum == 5) {
+      if(questionNum == 4) {
         endTheGame(0);
         return;
       }
@@ -119,7 +122,7 @@ answersContainer.addEventListener("click", function(event) {
     };
   })
   
-  function renderHighScore() {
+  function showScore() {
     for (let i = 0; i < listNum; i++) {
       
       var li = document.createElement("li");
@@ -133,7 +136,7 @@ answersContainer.addEventListener("click", function(event) {
   highScoreButton.on("click", function(event) {
     localStorage.setItem("Quiz score", quizScore);
     localStorage.setItem("user name", userName.value);
-    renderHighScore();
+    showScore();
   
     })
   

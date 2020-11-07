@@ -17,32 +17,35 @@ img {
 .timeRemaining {
     background: salmon;
     display: none;
-    /* margin-left: 25vw;
-    margin-right: 25vw;
-    margin-bottom: 1vw; */
+    padding-bottom: 20px;
     text-align: center;
 }
 
 .questions {
     color: black;
-    background: cornflowerblue;
+    background: rgb(109, 99, 99);
     display: none;
     text-align: center;
-    /* padding: 1vw;
+    padding-bottom: 40px;
+    padding: 1vw;
     margin-left: 25vw;
     margin-right: 25vw;
-    margin-bottom: 1vw; */
+    margin-bottom: 1vw;
 }
+
+/* .questionArea {
+    padding-bottom: 20px;
+} */
 
 .answers {
     background: rgb(57, 56, 70);
     display: none;
     padding: 3vw;
-    color: purple;
+    color: grey;
     width: auto;
     text-align: center;
-     /* margin-left: 25vw;
-    margin-right: 25vw; */
+     margin-left: 25vw;
+    margin-right: 25vw;
 }
 
 .answer-buttons {
@@ -50,7 +53,7 @@ img {
 }
 
 .endGame {
-    background: orangered;
+    background: green;
     display: none;
     padding: 3vw;
     margin-left: 25vw;
