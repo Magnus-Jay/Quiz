@@ -1,5 +1,5 @@
 
-var questionsRemaining = 4;
+var questionsRemaining = 8;
 var rightAnswer= "";
 var quizScore = 0;
 var secondsLeft = 30;
@@ -54,9 +54,35 @@ const quizQuestions = [
         answer2: 'Bugs Life',
         answer3: 'Gladiator',
         rightAnswer: 'Bad Lieutenant'
+    }, 
+    {
+        question: 'Which Nic Cage film was he slated to play a superhero?',
+        answer1: 'Spiderman',
+        answer2: 'Batman',
+        answer3: 'Superman',
+        rightAnswer: 'Superman'
+    }, 
+    {
+        question: 'What was the name of the film that Nic Cage starred in with John Travolta?',
+        answer1: 'Face Off',
+        answer2: 'Blue Watermelon',
+        answer3: 'Sleeping Beauty',
+        rightAnswer: 'Face Off',
+    } ,
+    {
+        question: 'Finish the name of the movie, "Gone in ____ ?',
+        answer1: 'A Flash',
+        answer2: '60 Seconds',
+        answer3: 'National Treasure',
+        rightAnswer: '60 Seconds',
+    } ,
+    {
+        question: 'What famous family does Nic Cage belong to?',
+        answer1: 'Obamas',
+        answer2: 'Clintons',
+        answer3: 'Capolla',
+        rightAnswer: 'National Treasure',
     } 
-    
-    
 ]
 
 
@@ -114,7 +140,7 @@ answersContainer.addEventListener("click", function(event) {
       } else {
         secondsLeft = secondsLeft - 10;
       }
-      if(questionNum == 4) {
+      if(questionNum == 8) {
         endTheGame(0);
         return;
       }
