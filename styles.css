@@ -25,6 +25,10 @@ img {
     display: none;
     padding-bottom: 20px;
     text-align: center;
+    padding: 1vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-bottom: 1vw;
 }
 
 .questions {
